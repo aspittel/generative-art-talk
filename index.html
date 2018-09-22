@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Generative Art!</title>
+  <meta name="author" content="Ali Spittel" />
+  <link href="./style.css" rel="stylesheet" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="impress-not-supported">
+  <div class="fallback-message">
+    <p>Your browser
+      <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of
+      this presentation.
+    </p>
+    <p>For the best experience please use the latest
+      <b>Chrome</b>,
+      <b>Safari</b> or
+      <b>Firefox</b> browser.</p>
+  </div>
+
+
+  <div id="impress" data-transition-duration="500">
+
+    <div class="step center first-slide" id="intro" data-scale="2" data-x="-500" data-y="-500">
+      <div class="name">
+        <h1>Intro to <div class="rainbow-text header">Generative Art</div>
+        </h1>
+        <div class="intro">
+          by Ali Spittel && James Reichard
+        </div>
+      </div>
+    </div>
+
+    <div id="roadmap" class="step" data-rel-x="3000" data-rel-y="1000">
+      <div class="no-flex">
+        <h2 class="rainbow-text">We are going to talk about...</h2>
+        <ul>
+          <li>How cool generative art is</li>
+          <li>P5.js</li>
+          <li>The intersection of art and code</li>
+          <li>Generative art</li>
+          <li>Where to start</li>
+          <li>Q&amp;A</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="look-at-art" class="step" data-rel-x="2000" data-rel-y="1000">
+      <h1 class="rainbow-text">Let's look at some art...</h1>
+    </div>
+
+
+    <div id="1d-cell-automata" class="step" data-rel-x="2000" data-rel-y="1000">
+      <h1><a href="http://math.hws.edu/eck/js/edge-of-chaos/CA.html">1D Cellular Automata and the Edge of Chaos</a></h1>
+    </div>
+
+    <div id="flowers" class="step" data-rel-x="2000" data-rel-y="1000">
+      <h1><a href="http://www.galaxykate.com/apps/Prototypes/LTrees/">Kate Compton's Flowers</a></h1>
+    </div>
+
+    <div id="particles" class="step" data-rel-x="2000" data-rel-y="1000">
+      <iframe height='594' scrolling='no' title='Generative art with mouse interaction' src='//codepen.io/MarcoGuglielmelli/embed/eGCDn/?height=594&theme-id=0&default-tab=result&embed-version=2'
+        frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MarcoGuglielmelli/pen/eGCDn/'>Generative
+          art with mouse interaction</a> by Marco Guglielmelli (<a href='https://codepen.io/MarcoGuglielmelli'>@MarcoGuglielmelli</a>)
+        on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>
+    </div>
+
+    <div id="waves" class="step" data-rel-x="2000" data-rel-y="1000">
+      <iframe height='583' scrolling='no' title='Animated generative art in multi-colour' src='//codepen.io/philnash/embed/wmermr/?height=583&theme-id=0&default-tab=result&embed-version=2'
+        frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/philnash/pen/wmermr/'>Animated
+          generative art in multi-colour</a> by Phil Nash (<a href='https://codepen.io/philnash'>@philnash</a>) on <a
+          href='https://codepen.io'>CodePen</a>.
+      </iframe> </iframe>
+    </div>
+
+    <div id="starry-night" class="step" data-rel-x="2000" data-rel-y="1000">
+
+      <iframe height='547' scrolling='no' title='Impressionists Blobs' src='//codepen.io/murasaki/embed/BmOzMP/?height=547&theme-id=0&default-tab=result&embed-version=2'
+        frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/murasaki/pen/BmOzMP/'>Impressionists
+          Blobs</a> by murasaki uma (<a href='https://codepen.io/murasaki'>@murasaki</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>
+    </div>
+
+    <div id="tree" class="step" data-rel-x="2000" data-rel-y="1000">
+      <iframe height='591' scrolling='no' title='Generated Tree' src='//codepen.io/mknadler/embed/JRvGOz/?height=591&theme-id=0&default-tab=result&embed-version=2'
+        frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/mknadler/pen/JRvGOz/'>Generated
+          Tree</a> by Miriam Nadler (<a href='https://codepen.io/mknadler'>@mknadler</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>
+    </div>
+
+    <div id="code-art" class="step" data-rel-x="2000" data-rel-y="1000">
+      <h2 class="rainbow-text">Code Art: any type of art created with code</h2>
+    </div>
+
+    <div id="generative-art" class="step" data-rel-x="2000" data-rel-y="1000">
+      <div class="no-flex">
+        <h2 class="rainbow-text">What is generative art?</h2>
+        <ul>
+          <li>Some sort of autonomous system is involved</li>
+          <li>Creator does a lot of the work, but re-running the code results in a different outcome</li>
+          <li>Lots of tweaking and iterating</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="possibilities" class="step" data-rel-x="2000" data-rel-y="1000">
+      <div class="no-flex">
+        <h2 class="rainbow-text">Some Possibilities for Generative Art...</h2>
+        <ul>
+          <li>Incorporate randomness</li>
+          <li>Make use of algorithms</li>
+          <li>Can have a result in mind</li>
+          <li>Can also do without a result in mind</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="where-start" class="step" data-rel-x="2000" data-rel-y="1000">
+      <h1 class="rainbow-text">Where to start...</h1>
+    </div>
+
+    <div id="P5" class="step" data-rel-x="2000" data-rel-y="1000">
+      <div class="no-flex">
+        <h1 class="rainbow-text">P5!</h1>
+        <ul>
+          <li>Goal is to "make coding accessible for artists, designers, educators, and beginners"</li>
+          <li>Written in JavaScript, wrapper on the HTML Canvas API</li>
+          <li>Lots of drawing, but also sound, video, and webcam</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="how-to" class="step" data-rel-x="2000" data-rel-y="1000">
+        <div class="no-flex">
+          <h1 class="rainbow-text">What to Build</h1>
+          <ul>
+            <li>Even simple scripts can make really cool stuff</li>
+            <li>Start with tutorials (or CodePens!) and tweak them</li>
+          </ul>
+        </div>
+      </div>  
+
+    <div id="resources" class="step" data-rel-x="2000" data-rel-y="1000">
+      <div class="no-flex">
+        <h1 class="rainbow-text">More Resources</h1>
+        <h2>generativeartistry.com</h2>
+        <h2>Coding Train</h2>
+      </div>
+    </div>
+
+    <div id="keep-in-touch" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="no-flex">
+        <h1 class="rainbow-text">Keep in Touch!</h1>
+        <h2>
+          <i class="fab fa-twitter" style="color:#00aced;"></i> @aspittel
+        </h2>
+        <h2>
+          <i class="fas fa-link" style="color:red;"></i> alispit.tel
+        </h2>
+        <h2>
+          <i class="fas fa-link" style="color:white;"></i> dev.to/aspittel
+        </h2>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/impress.js"></script>
+    <script>
+      impress().init()
+    </script>
+</body>
+
+</html>

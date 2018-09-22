@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  background-color: #000040;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+/* Fallback Message */
+
+h1 {
+  font-size: 100px;
+  letter-spacing: 6px;
+  word-spacing: 9px;
+  text-transform: uppercase;
+  line-height: 120px;
+}
+
+.rainbow-text {
+  background: linear-gradient(to right, #fea3aa, #f8b88b, #faf884, #baed91, #b2cefe, #f2a2e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rainbow-text + .header {
+  height: 220px;
+  width: 700px;
+}
+
+.fallback-message {
+  font-family: sans-serif;
+  line-height: 1.3;
+
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+
+  border: 1px solid #e4c652;
+  border-radius: 10px;
+  background: #eedc94;
+}
+
+.fallback-message p {
+  margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+  display: none;
+}
+
+.intro {
+  font-size: 40px;
+}
+
+h2 {
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+ul {
+  font-size: 40px;
+  line-height: 200%;
+}
+
+.name {
+  text-align: center;
+}
+
+.slide-header {
+  font-size: 50px;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  display: block;
+  font-size: 100px;
+  line-height: 110px;
+  letter-spacing: 0px;
+}
+
+.letter {
+  font-weight: 800;
+  letter-spacing: -20px;
+  mix-blend-mode: darken;
+  position: relative;
+  transition-delay: 2s;
+  opacity: 0.9;
+}
+
+.smaller-letter {
+  font-weight: 800;
+  letter-spacing: -10px;
+  mix-blend-mode: darken;
+  position: relative;
+  transition-delay: 2s;
+  opacity: 0.9;
+}
+
+.step {
+  /* position: relative;
+  display: block; */
+
+  width: 900px;
+  height: 700px;
+  margin: 20px auto;
+  padding: 40px 60px;
+
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+/*
+    Make inactive steps a little bit transparent.
+*/
+/* .impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+    transition:         opacity 1s;
+}
+.impress-enabled .step.active { opacity: 1 } */
+
+/*
+    Speaker notes allow you to write comments within the steps, that will not 
+    be displayed as part of the presentation. However, they will be picked up
+    and displayed by impressConsole.js when integrated.
+*/
+
+.notes {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  /* margin-top: 0.5em; */
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin: 0.7em;
+}
+
+li {
+  margin: 0.2em;
+}
+
+/* Highlight.js used for coloring pre > code blocks. */
+pre > code {
+  font-size: 14px;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+/* Inline code, no Highlight.js */
+code {
+  font-family: "Cutive mono", "Courier New", monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.1em;
+  background: rgba(200, 200, 200, 0.3);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.9);
+  border-radius: 0.2em;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+  border-left: 1px solid rgba(100, 100, 100, 0.4);
+
+  transition: 0.5s;
+}
+a:hover,
+a:focus {
+  background: rgba(200, 200, 200, 1);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
+}
+
+blockquote {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+}
+
+em {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+strong {
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
+}
+
+q {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+strike {
+  opacity: 0.7;
+}
+
+small {
+  font-size: 0.4em;
+}
+
+img {
+  width: 800px;
+}
+
+.active {
+  opacity: 1;
+}
+
+/******************* PLUGINS *************************************************************/
+/*
+  This version of impress.js supports plugins, and in particular, a UI toolbar
+  plugin that allows easy navigation between steps and autoplay.
+*/
+.impress-enabled div#impress-toolbar {
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  opacity: 0.6;
+  z-index: 10;
+}
+.impress-enabled div#impress-toolbar > span {
+  margin-right: 10px;
+}
+
+/*
+    With help from the mouse-timeout plugin, we can hide the toolbar and
+    have it show only when you move/click/touch the mouse.
+*/
+body.impress-mouse-timeout div#impress-toolbar {
+  display: none;
+}
+
+/*
+    In fact, we can hide the mouse cursor itself too, when mouse isn't used.
+*/
+body.impress-mouse-timeout {
+  cursor: none;
+}
+
+/* Progress bar */
+.impress-progressbar {
+  position: absolute;
+  right: 118px;
+  bottom: 1px;
+  left: 118px;
+  border-radius: 7px;
+  border: 2px solid rgba(100, 100, 100, 0.2);
+}
+.impress-progressbar div {
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background: rgba(75, 75, 75, 0.4);
+  transition: width 1s linear;
+}
+.impress-progress {
+  position: absolute;
+  left: 59px;
+  bottom: 1px;
+  text-align: left;
+  font-size: 10pt;
+  opacity: 0.6;
+}
+
+/* Help popup plugin */
+.impress-enabled #impress-help {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+  color: #eeeeee;
+  font-size: 80%;
+  position: fixed;
+  left: 2em;
+  bottom: 2em;
+  width: 24em;
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+  z-index: 100;
+  font-family: Verdana, Arial, Sans;
+}
+.impress-enabled #impress-help td {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* Substep plugin */
+
+#impress .step .substep {
+  opacity: 0;
+}
+
+#impress .step .substep.substep-visible {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* .impress-enabled                          { pointer-events: none }
+.impress-enabled #impress                 { pointer-events: auto } */
+.impress-enabled #impress-toolbar {
+  pointer-events: auto;
+}
+.impress-enabled #impress-console-button {
+  pointer-events: auto;
+}
+
+rainbow-text {
+  text-align: center;
+}
+
+.iframe {
+  text-align: center;
+  width: 100%;
+}
