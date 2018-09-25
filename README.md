@@ -10,19 +10,19 @@ Code art is any art that is built using code. There are endless examples on Code
 
 Often, generative art draws inspiration from modern art, especially pop art that makes heavy use of orderly geometric patterns. However, it is a very broad and rich category of art created with code with a central characteristic: Generative art is art built with code, but, on top of that, it incorporates a self-governed or autonomous system in some way.
 
-Amazingly, randomness is one type of autonomous system. By incorporating chance into a piece of code art, we get a different, completely unique piece of art each time you run your script, load your page, or respond to some user interaction. 
+Randomness is one type of autonomous system. By incorporating chance into a piece of code art, we get a different, completely unique piece of art each time you run your script, load your page, or respond to some user interaction. 
 
 There are also more orderly autonomous systems of course, like Mandelbrot's Fractal, derived from a deceptively simple equation.
 
 ![Mandelbrot's Fractal](https://upload.wikimedia.org/wikipedia/commons/a/a7/Mandelbrot_set_image.png)
 
-We can also integrate both approaches, blending order and chaos to taste!
+We can also integrate both approaches, blending order and chaos!
 
-In a way, the art work becomes a collaboration between the computer and the artist. Some aspects of the artwork are controlled by the coder, but not all of them. The artist controls the randomness and the order in the art.
+The art work becomes a collaboration between the computer and the artist. Some aspects of the artwork are controlled by the coder, but not all of them. The artist controls both the randomness and the order in the art.
 
-You might say that by using an autonomous system, the artist gives up control over their art, and the computer is doing it for them. A more nuanced perspective emerges when a new creative process is considered: tweaking these systems and observing their output. The coder-artist then engages in a feedback loop where they are constantly tweaking a system to produce more desirable and often more surprising results.
+In a way, with an autonomous system, the artist gives up control over their art, and the computer is doing it for them. A more nuanced perspective emerges when a new creative process is considered: tweaking these systems and observing their output. The coder-artist then engages in a feedback loop where they are constantly tweaking a system to produce more desirable and often more surprising results.
 
-This process truly embraces experimentation and happy accidents in a profound way that reshapes the role of the artist. As generative artists, we reach for tools in our tool belts, loops, control flow, specialized functions, and so forth, blending these with often unpredictable forces, to produce novel results that may very well be completely unique and unlike anything else that exists.
+This process embraces experimentation and happy accidents in a way that reshapes the role of the artist. As generative artists, we use the code basics like loops, control flow, specialized functions and then blend them with often unpredictable forces, to produce completely unique results unlike anything else that exists.
 
 ## Examples of Generative Art
 
