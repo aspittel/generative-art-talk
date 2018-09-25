@@ -57,17 +57,19 @@ There are two main strategies for creating generative art, though most will fall
 
 ## Where should you start?
 
-If you know JavaScript, [P5.js]() is an awesome place to start. Its goal is to "make coding accessible for artists, designers, educators, and beginners." It is a wrapper on the [Canvas API](), and it simplifies a lot of the math. It focuses on drawing, but you can also do sound, video, or webcam interaction with it if you are interested in those forms of art!
+If you know JavaScript, [P5.js](https://p5js.org/) is an awesome place to start. Its goal is to "make coding accessible for artists, designers, educators, and beginners." It is a wrapper on the [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), and it simplifies a lot of the math. It focuses on drawing, but you can also do sound, video, or webcam interaction with it if you are interested in those forms of art!
 
 ## A Quick Introduction to P5
 
-First, load in the [P5 CDN](). Then, in your JavaScript file, you will add two functions that will be used in pretty much ever P5 script: `setup` and `draw`. These names are necessary for P5 to call them. 
+First, load in the [P5 CDN](https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js). Then, in your JavaScript file, you will add two functions that will be used in pretty much ever P5 script: `setup` and `draw`. These names are necessary for P5 to call them. 
 
 `setup` is called when the program start. You will probably create a canvas to draw on within it using the `createCanvas` function, and you may set some defaults there. It is only called once!
 
 `draw` is called after setup, and is executed constantly until you call `noLoop`, which will stop it from running again. You can control how many times `draw` runs each second with the `frameRate` function. With generative art, I usually put `noLoop` in the `setup` function, which makes `draw` only run once instead of continuously.
 
 [Here's a P5 starter template](https://codepen.io/aspittel/pen/EeJJBm)
+
+Since we've talked so much about the importance of randomness for generative art, another important function in P5 is `random`. It works similarly to JavaScript's `Math.random` but you can set a range for the numbers so that you don't have to do as much math to get the number to a useful format. 
 
 ## P5 Lines
 
@@ -86,9 +88,48 @@ Even really simple scripts can generate cool pieces of art!
 
 ## P5 Shapes
 
+You can also create shapes with P5 -- like circles, triangles, and squares.
+
+Here's an example of creating some shapes with P5:
+
+```js
+// circle
+ellipse(xCoordinate, yCoordinate, width, height)
+
+// square
+rect(xCoordinate, yCoordinate, width, height)
+
+// triangle
+triangle(xCoordinate1, yCoordinate1, x2, y2, x3, y3)
+```
+
+Then, we can create some more shapes to build something more fun!
+
+<iframe height='577' scrolling='no' title='Shapes' src='//codepen.io/aspittel/embed/mGYgWM/?height=577&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/aspittel/pen/mGYgWM/'>Shapes</a> by Ali Spittel (<a href='https://codepen.io/aspittel'>@aspittel</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 ## P5 Movement
 
+We can add movement to our drawings by removing the `noLoop` function call in the `setup` function -- check this out!
+
+<p data-height="623" data-theme-id="0" data-slug-hash="ZMNZKd" data-default-tab="result" data-user="superbuggy" data-pen-title="p5 Lines with Movement & Color" class="codepen">See the Pen <a href="https://codepen.io/superbuggy/pen/ZMNZKd/">p5 Lines with Movement & Color</a> by James (<a href="https://codepen.io/superbuggy">@superbuggy</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 ## Color
+
+You can also play with color with generative art by randomly choosing colors. You can do this mathematically through RGB values, or you can generate a color palette with your favorite color picker (we've been using [this](https://www.colorbox.io/) one).
+
+You can set the fill color with the `color` function. It takes a bunch of different formats, like named colors, RGBAs, and hex codes. 
+
+You can also change the color of the outline using `stroke`. You can also remove that outline using `noStroke` or make it a different width with `strokeWeight`.
+
+## Putting it all together
+
+Once we have all of those pieces in place, we can combine the techniques to build some really cool stuff. 
+
+<iframe height='265' scrolling='no' title='Colored shapes' src='//codepen.io/aspittel/embed/Pdvgda/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/aspittel/pen/Pdvgda/'>Colored shapes</a> by Ali Spittel (<a href='https://codepen.io/aspittel'>@aspittel</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 
 ## Another Strategy: Tweaking Tutorials
 
