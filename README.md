@@ -8,11 +8,21 @@ Code art is any art that is built using code. There are endless examples on Code
 
 ## What is generative art?
 
-Generative art is art built with code, but, on top of that, it incorporates randomness in some way. Therefore, each time you run your script, load your page, or upon some user interaction we get a different piece of art. 
+Often, generative art draws inspiration from modern art, especially pop art that makes heavy use of orderly geometric patterns. However, it is a very broad and rich category of art created with code with a central characteristic: Generative art is art built with code, but, on top of that, it incorporates a self-governed or autonomous system in some way.
 
-In a way, the art work becomes a collaboration between the computer and the artist. Some aspects of the artwork are controlled by the coder, but not all of them. The artist controls the randomness in the art.
+Amazingly, randomness is one type of autonomous system. By incorporating chance into a piece of code art, we get a different, completely unique piece of art each time you run your script, load your page, or respond to some user interaction. 
 
-Usually generative art draws inspiration from modern art.
+There are also more orderly autonomous systems of course, like Mandelbrot's Fractal, derived from a deceptively simple equation.
+
+![Mandelbrot's Fractal](https://upload.wikimedia.org/wikipedia/commons/a/a7/Mandelbrot_set_image.png)
+
+We can also integrate both approaches, blending order and chaos to taste!
+
+In a way, the art work becomes a collaboration between the computer and the artist. Some aspects of the artwork are controlled by the coder, but not all of them. The artist controls the randomness and the order in the art.
+
+You might say that by using an autonomous system, the artist gives up control over their art, and the computer is doing it for them. A more nuanced perspective emerges when a new creative process is considered: tweaking these systems and observing their output. The coder-artist then engages in a feedback loop where they are constantly tweaking a system to produce more desirable and often more surprising results.
+
+This process truly embraces experimentation and happy accidents in a profound way that reshapes the role of the artist. As generative artists, we reach for tools in our tool belts, loops, control flow, specialized functions, and so forth, blending these with often unpredictable forces, to produce novel results that may very well be completely unique and unlike anything else that exists.
 
 ## Examples of Generative Art
 
