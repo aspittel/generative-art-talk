@@ -26,7 +26,6 @@ Usually generative art draws inspiration from modern art.
   on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-
 <iframe height='583' scrolling='no' title='Animated generative art in multi-colour' src='//codepen.io/philnash/embed/wmermr/?height=583&theme-id=0&default-tab=result&embed-version=2'
 frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/philnash/pen/wmermr/'>Animated
   generative art in multi-colour</a> by Phil Nash (<a href='https://codepen.io/philnash'>@philnash</a>) on <a
