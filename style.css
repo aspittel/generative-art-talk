@@ -16,6 +16,11 @@ h1 {
   line-height: 120px;
 }
 
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .rainbow-text {
   background: linear-gradient(to right, #fea3aa, #f8b88b, #faf884, #baed91, #b2cefe, #f2a2e8);
   -webkit-background-clip: text;
